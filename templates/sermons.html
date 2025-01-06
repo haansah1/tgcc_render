@@ -1,0 +1,97 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+  <!-- Template Main CSS File -->
+  <link href="{% static 'sermons.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="main-cont">
+    <div class="body">
+      <div class="logo-div">
+        <img class="logo" src="{% static 'img/images/logo.png' %}" alt="">
+    </div>
+        <img class="body-im" src="{% static 'img/images/im3.JPG' %}" alt="">
+        <div class="header">
+            <div class="links">
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'sermons' %}">Sermons</a>
+                <a href="{% url 'testimonies' %}">Testimonies</a>
+                <a href="{% url 'giving' %}">Giving</a>
+                <a href="{% url 'gallery' %}">Gallery</a>
+            </div>
+            <input type="checkbox" id="input">
+            <label for="input">
+                <div class="divbars">
+                    <i class="fas fa-bars bars"></i>
+                </div>
+            </label>
+        </div>
+        <div class="cont1">
+            <p class="p1">Sermons</p>
+        </div>
+    </div>
+    <div class="hid">
+        <div class="close">
+            <i class="fas fa-close"></i>
+        </div>
+        <div class="links1">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'sermons' %}">Sermons</a>
+            <a href="{% url 'testimonies' %}">Testimonies</a>
+            <a href="{% url 'giving' %}">Giving</a>
+            <a href="{% url 'gallery' %}">Gallery</a>
+        </div>
+        
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <style>
+            .color{
+                color: #5794f5 ;
+            }
+        </style>
+        <ul id="portfolio-flters" class="d-flex justify-content-center color">
+          <li data-filter="*" class="filter-active color">All</li>
+          <li data-filter=".filter-app">Shiloh</li>
+          <li data-filter=".filter-card">Sundays</li>
+          <li data-filter=".filter-web">Special service</li>
+        </ul>
+
+        <div class="row portfolio-container">
+          {% for audio in audios %}
+          
+            <div class="col-lg-4 col-md-6 portfolio-item filter-{{audio.group}}">
+              <p class="title">{{audio.name}}</p>
+              <div class="portfolio-img"><img src={{audio.imageURL}} id="image" class="img-fluid" alt="">
+                
+              <p>
+                <a href={{audio.imageURL}}  data-gallery="portfolioGallery" class="portfolio-lightbox preview-link color" title={{audio.audioURL}}>
+                  <i class="fas fa-play"></i>
+                </a>
+                
+              </p></div>
+              <div class="portfolio-info">
+                <p class="title">{{audio.description}}</p>
+                <a href={{audio.audioURL}} download={{audio.audioURL}} class="details-link color" ><i class="fas fa-download"></i></a>
+              </div>
+            </div>
+            
+          {% endfor %}
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+  </main><!-- End #main -->
+
+
+{% endblock content %}

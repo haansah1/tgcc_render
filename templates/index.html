@@ -1,0 +1,197 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGCC</title>
+    <link href="{% static 'index.css' %}" rel="stylesheet">
+    <link href="{% static 'font-6/css/all.css' %}" rel="stylesheet">
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'swiper/swiper-bundle.min.js' %}"></script>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="main-cont">
+            <div class="body">
+                <div class="logo-div">
+                    <img class="logo" src="{% static 'img/images/logo.png' %}" alt="">
+                </div>
+                <video autoplay muted loop playsinline src="{% static 'img/images/Vid.mp4' %}" type="video/mp4" class="clip">dsd</video>
+                <div class="header">
+                    <div class="links">
+                        <a href="{% url 'index' %}">Home</a>
+                        <a href="{% url 'about' %}">About</a>
+                        <a href="{% url 'sermons' %}">Sermons</a>
+                        <a href="{% url 'testimonies' %}">Testimonies</a>
+                        <a href="{% url 'giving' %}">Giving</a>
+                        <a href="{% url 'gallery' %}">Gallery</a>
+                    </div>
+                    <input type="checkbox" id="input">
+                    <label for="input">
+                        <div class="divbars">
+                            <i class="fas fa-bars bars"></i>
+                        </div>
+                    </label>
+                </div>
+                <div class="cont1">
+                    <p class="p11">The Glorious City Church</p>
+                    <p class="p12">Heralding the glorious state of the church</p>
+                    <p class="p2">We're glad to have you</p>
+                </div>
+            </div>
+            <div class="hid">
+                <div class="close">
+                    <i class="fas fa-close"></i>
+                </div>
+                <div class="links1">
+                    <a href="{% url 'index' %}">Home</a>
+                    <a href="{% url 'about' %}">About</a>
+                    <a href="{% url 'sermons' %}">Sermons</a>
+                    <a href="{% url 'testimonies' %}">Testimonies</a>
+                    <a href="{% url 'giving' %}">Giving</a>
+                    <a href="{% url 'gallery' %}">Gallery</a>
+                </div>
+                
+            </div>
+        </div>
+        <main id="main">
+            <div class="body2">
+                <div class="welcome">
+                    <p data-aos-duration="1000" data-aos="fade-up" class="p">Welcome to the Tangibility Arena</p>
+                    <div>
+                        <p data-aos-duration="1000" data-aos="fade-right" class="welc-p">We specially invite you to The Glorious City Church. Come join us worship God together and have a wonderful time in His presence <br>
+                            <a href="#">Join Us</a>
+                        </p>
+                        <p data-aos-duration="1000" data-aos="fade-left" class="welc-p">If you are already a part of us, our arms are always open to welcome you into any of our departments. Remember, labour for God will never be in vain<br>
+                            <a href="#">Join a department </br> <i class="fas fa-angle-double-down"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="quote">
+                    <img src="{% static 'img/images/Bible.JPG' %}" alt="">
+                    <div class="script">
+                        <p data-aos-duration="1000" data-aos="fade-up"class="welc-p">Ecclesiastes 5:1-2 <br>
+                            <i class="fas fa-quote-left"></i>  Walk prudently when you go to the house of God; and draw near to hear rather than to give the sacrifice of fools, for they do not know that they do evil  <i class="fas fa-quote-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <div data-aos-duration="1000" data-aos="fade-up" class="services">Services</div>
+                
+                <div class="body3">
+                    <div class="grid">
+                        <div data-aos-duration="1000" data-aos="fade-right"class="grid1">
+                            <img src="{% static 'img/images/img2.JPG' %}" alt="">
+                            <p data-aos-duration="1000" data-aos="fade-up" class="im-p">Sunday Service</p>
+                        </div>
+                        <div data-aos-duration="1000" data-aos="fade-left" class="join">
+                            <p class="p1">Join us in worship</p>
+                            <p class="p2">Each and every Sunday for a supernatural glorious sunday service</p>
+                            <section class="p3">
+                                <i class="fas fa-location loc"></i>
+                                <p> Tangiblity Arena, Adjacent Goil filling Station</p>
+                            </section>
+                            <section class="s1">
+                                <article>
+                                    <i class="fas fa-clock"></i>
+                                </article>
+                                <article  class="art1">
+                                    <i class="fas fa-pen"></i>
+                                    <section>
+                                        <p class="p4">Executive Service</p>
+                                        <p class="p7">4pm prompt</p>
+                                        <p class="p6">Second Service</p>
+                                        <p class="p7">4pm prompt</p>
+                                    </section>
+                                </article>
+                                
+                            </section>
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <div class="grid">
+                        <div data-aos-duration="1000" data-aos="fade-right" class="join">
+                            <p class="d">Join us in prayer</p>
+                            <p class="p2">Each and every Friday night for a prophetic and supernatural power night service</p>
+                            <section class="p3">
+                                <i class="fas fa-location loc"></i>
+                                <p> Same Venue</p>
+                            </section>
+                            <section class="s1">
+                                <article>
+                                    <i class="fas fa-clock"></i>
+                                </article>
+                                <article class="art1">
+                                    <i class="fas fa-pen"></i>
+                                    <section>
+                                        <p class="p4">Service</p>
+                                        <p class="p7">6pm prompt</p>
+                                    </section>
+                                </article>
+                                
+                            </section>
+                            
+                        </div>
+                        <div data-aos-duration="1000" data-aos="fade-left" class="grid1"><img src="{% static 'img/images/im6.jpg' %}" alt="">
+                            <p class="im-p">Power Night</p>
+                        </div>
+                         
+                    </div>
+                    <br>
+                    <div class="grid">
+                        <div data-aos-duration="1000" data-aos="fade-right" class="grid1"><img src="{% static 'img/images/im7.jpg' %}" alt="">
+                            <p class="im-p">Shiloh Hour</p>
+                        </div>
+                        <div data-aos-duration="1000" data-aos="fade-left" class="join">
+                            <p class="p1">Let's share the Word</p>
+                            <p class="p2">Each and every Saturday for a powerful word from God</p>
+                            <section class="p3">
+                                <i class="fas fa-location loc"></i>
+                                <p> Same Venue</p>
+                            </section>
+                            <section class="s1">
+                                <article>
+                                    <i class="fas fa-clock"></i>
+                                </article>
+                                <article class="art1">
+                                    <i class="fas fa-pen"></i>
+                                    <section>
+                                        <p class="p4">Service</p>
+                                        <p class="p7">4pm prompt</p>
+                                    </section>
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrapper">
+                {% comment %} <article></article> {% endcomment %}
+                <div>
+                    <h4>Useful links</h4>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    
+                    
+                </div>
+                <div>
+                    <a href="#">Sermons</a>
+                    <a href="#">Testimonies</a>
+                </div>
+                <div>
+                    <a href="#">Giving</a>
+                    <a href="#">Gallery</a>
+                </div>
+            </div>
+        </footer>
+
+        
+{% endblock content %}

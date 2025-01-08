@@ -21,7 +21,7 @@ html{
     width: 100%;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
-    background-color: rgba(0, 0, 0, 0.65);
+    /* background-color: rgba(0, 0, 0, 0.65); */
     
 }
 .cont1{
@@ -42,12 +42,8 @@ html{
     /* font-size:clamp(1.8em, 4cqi, 2.7em); */
     font-size:clamp(1.8em, 12cqi, 3.9em);
     font-weight: 750;
-    /* color: red; */
     padding: 0px 5vw;
 }
-/* .body .p12{
-    letter-spacing: 4px;
-} */
 
 .body .p12{
     letter-spacing: 2px;
@@ -56,14 +52,12 @@ html{
 
 .cont1 .p2{
     padding: 15px 25px;
-    /* border: 2px solid rgb(98, 98, 252); */
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-top: 3vh;
     font-weight: 500;
     transition:.3s linear;
     background: rgb(98, 98, 252);
-    /* color: black; */
     color: white;
 }
 
@@ -240,8 +234,13 @@ input{
 .body2{
     /* padding-right: 10vw; */
     text-align: center;
-    width: 100vw;
-    height: 100vh;
+
+    
+}
+
+.welcome-wrapper{
+    /* width: 100vw;
+    height: 100vh; */
     background:#e0e0e0 url("img/images/pdkod 123.png") center/cover;
 
     

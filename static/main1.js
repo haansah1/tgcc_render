@@ -26,11 +26,10 @@ var hidEl = document.querySelector(".hid")
     hidEl.style.transform = "scaleY(0)";
   })
 
-  const sensitivity = 70;
+  const sensitivity = 25;
 
   welcomeEl.addEventListener("mousemove", (e)=>{
 
-    
     const windowWidth = window.innerWidth;
     const windowHeight = window.innerHeight;
 
@@ -40,8 +39,7 @@ var hidEl = document.querySelector(".hid")
     const moveX = (mouseX - 0.5) * sensitivity;
     const moveY = (mouseY - 0.5) * sensitivity;
 
-    welcomeEl.style.backgroundPosition = `${50 - moveX}%, ${50 - moveY}%`;
-
+    welcomeEl.style.backgroundPosition = `${50 - moveX}% ${50 - moveY}%`;
   });
 
   

@@ -312,8 +312,11 @@ input{
     outline-offset: -10px;
     transition: .3s linear;
     background-color: #e0e0e0;
+    /* box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff; */
     box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+
 }
+
 .welcome a:hover{
     padding: 15px 20px;
     width: 220px;
@@ -323,37 +326,26 @@ input{
 }
 
 .quote{
-    /* height: 50vh; */
     width: 100vw;
     position:relative;
-    border-radius: 40px;
+    border-top-right-radius: 40px;
     margin-top: -35px;
-    background:white;
-    transition: all .4s linear;
+    border-top-left-radius: 40px;
+    align-items: center;
+    background: url("img/images/website/image1.png") center/cover;
+    transition: all .2s linear;
+    padding: 55px 15vw;
+    font-size: 11px;
+}
 
-    
-    
+.quote img{
+    height: 50px;
+    margin-bottom: 20px;
 }
 
 .quote:hover{
-    background: #3838ff;
+    transform: scaleY(1.03);
 }
-
-.quote:hover i{
-    color:white;
-}
-
-.quote:hover .script{
-    color:white;
-}
-
-.quote i{
-    font-size: 6em;
-    color: #3838ff;
-    padding: 40px 0px;
-    /* position: absolute; */
-}
-
 
 .script{
     font-size:clamp(1.15em, 4cqi, 1.3em);
@@ -363,15 +355,330 @@ input{
     justify-content: center;
     align-items: center;
     color:black;
-    padding: 0px 50px 50px 50px;
-    font-weight: 700;
+    padding: 0px 50px 0px 50px;
+    font-weight: 550;
+}
+
+.body4{
+    background: url("img/images/website/Artboard\ 4.png") center/cover;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 0px;
+}
+
+.swiper{
+    height: 170px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px 0px;
+}
+
+.body4 img{
+    object-fit:cover;
+    object-position: center;
+    height:100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+.body4 .p1{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.body4 .p2{
+    padding: 0px 30vw 0px 30vw;
+    font-size: 10px;
+}
+
+.body5{
+    height: 80vh;
+    background: url("img/images/website/Artboard6.png") center/cover;
+}
+
+
+
+
+.body6{
+    background-color: #3838ff;
+    color: white;
+    padding: 40px 15vw;
+
+}
+
+.body6 .p1, .body6 .p2, .body6 .p4{
+    font-weight: bold;
+}
+
+.body6 .p3, .body6 .p5{
+    /* font-weight: bold; */
+    font-size: 10px;
+}
+
+.body6 a{
+    box-shadow: 10px 10px 20px #2b2bce, -10px -10px 20px #4646ff;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+
+}
+
+.body6 a:hover{
+    box-shadow: 8px 8px 15px #2b2bce, -8px -8px 15px #4646ff;
 }
 
 .services{
     margin: 5vh 0px;
-    font-size:clamp(2em, 4cqi, 3em);
-    color: rgb(255, 215, 0);
+    font-weight:900;
+    
+    font-size:clamp(1.5em, 3cqi, 2.2em);
 }
+
+
+.body7 .flex1{
+    display:flex;
+    flex-wrap:nowrap;
+    gap: .8em;
+    height: 20vh;
+}
+
+.body7 .flex1 div{
+    width: 50vw;
+}
+
+.body7 .flex1_1{
+    background:url("img/images/website/Rectangle10.png") center/cover;
+    border-radius: 0px 20px 20px 0px;
+}
+.body7 .flex1 div img{
+    width: 100%;
+}
+.flex1 a{
+    text-decoration: none;
+    background-color: #3838ff;
+    padding: 0px 25px;
+    align-items:center;
+    text-align:left;
+    justify-content:left;
+    border-radius: 20px;
+    height: 30px;
+    display:flex;
+    color:white;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight:600;
+    width: 50%;
+    
+}
+.body7 .flex1_2{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:left;
+    text-align:left;
+
+}
+.body7 .flex1_2 div:nth-child(1){
+    padding-left: 10px;
+    display:flex;
+    justify-content:left;
+    align-items:top;
+}
+
+.body7 .flex1_2 div:nth-child(2){
+    border-radius: 20px 0px 0px 20px;
+    height: 60%;
+    background:url("img/images/website/Rectangle9.png") center/cover;
+}
+
+.body7 .flex2{
+    height: 20vh;
+    margin-top: 10px;
+    /* background:red; */
+    /* align-items:center; */
+    text-align:center;
+    justify-content:center;
+    display:flex;
+    gap: .8em;
+}
+
+.body7 .flex2 div{
+    
+    border-radius: 20px;
+}
+
+.body7 .flex2 div:nth-child(1){
+    width: 200px;
+    background: url("img/images/website/hwe-9.png") center/cover;
+}
+
+
+.body7 .flex2 div:nth-child(2){
+    width: 100px;
+    background: url("img/images/website/Rectangle9.png") center/cover;
+}
+
+
+.body7 .flex2 div:nth-child(3){
+    width: 150px;
+    background: url("img/images/website/Rectangle9.png") center/cover;
+}
+
+.body7 .lorem{
+    font-size:12px;
+    padding: 50px 0px;
+}
+
+.body8{
+    background-color: #e0e0e0;
+    padding: 60px 0px;
+    text-align:center;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+
+}
+.body8-main{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    gap: 1.5em;
+}
+
+.body8-main .flex1{
+    height: 370px;
+    width: 220px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+
+.body8-main .flex1 div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.body8-main .flex1 div:nth-child(2){
+    height: 65%;
+}
+
+.body8-main .flex1 div:nth-child(1){
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 35%;
+    align-items: flex-start;
+    text-align:left;
+}
+
+.body8-main .flex1 div:nth-child(1) .p1{
+    font-weight: bolder;
+    font-size: 2em;
+    line-height: 25px;
+}
+
+.body8-main .flex1 div:nth-child(1) .p2{
+    font-weight: 550;
+    font-size: 1.2em;
+    line-height: 15px;
+}
+
+.body8-main .flex1 div:nth-child(1) .p3{
+    font-size: 12px;
+    line-height: 10px;
+
+}
+
+.body8 a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 0px;
+    border-radius: 20px;
+    width: 550px;
+    font-weight: bold;
+
+}
+
+.body8 .a{
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.body8-main .flex2{
+    padding: 0px 40px 0px 40px;
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: center;
+    height: 370px;
+    max-width: 400px;
+    background: url("img/images/website/Group3.png") center/cover;
+    border-radius: 20px;
+}
+
+.body8-main .flex2 p{
+    width: 100%;
+    color: white;
+    font-weight:bold;
+    border-bottom: 2px solid #3838ff;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+
+.body8-main .flex2 p:hover{
+    background-color: #3838ff;
+    transform: scale(1.15);
+    transition: all .2s linear; 
+    cursor: pointer;
+    padding: 0px 2px;
+}
+
+.body9{
+    background: url("img/images/website/Artboard\ 4.png") center/cover;
+    height: 30vh;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    font-weight: 550;
+    font-size: 2.3em;
+}
+
+.body9 em{
+    font-weight:bolder;
+    text-transform:uppercase;
+    font-style:normal;
+}
+
+.body10{
+    padding: 50px 0px;
+    background-color: #e0e0e0;
+
+}
+.body10 .title{
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+
 
 .grid{
     display:flex;
@@ -383,12 +690,11 @@ input{
 .grid div{
     height: 90vh;
     width: 40vw;
-    /* overflow: hidden; */
 }
 .grid1{
     position:relative;
     height: 90vh;
- }
+}
 .im-p{
     height: 100%;
     display:flex;
@@ -423,12 +729,12 @@ input{
     flex-direction: column;
 }
 
-.p1{
+.join .p1{
     font-size:clamp(1.9em, 4cqi, 3em);
     color: rgb(98, 98, 252),
 }
 
-.p2{
+.join .p2{
     
     font-size:clamp(1em, 4cqi, 1.2em);
     text-align: center;
@@ -442,7 +748,7 @@ input{
     /* background: rgb(98, 98, 252); */
     height: 32px;
 }
-.p3{
+.join .p3{
     display: flex;
     gap: 1em; 
     background-color: black;
@@ -453,7 +759,7 @@ input{
     padding: 30px;
     margin-bottom: 20px;
 }
-.p3 p{
+.join .p3 p{
     font-size: 1.3em;
     color: white;
     background:black;
@@ -557,10 +863,13 @@ input{
         background:#e0e0e0 url("img/images/pdkod 123.png") center/cover;
         transition: background-position .2s linear;
     }
+    .swiper{
+        width: 400px;
+    }
 }
 
 
-
+/* -----------------PHONE VIEW--------------- */
 @media(max-width:768px) {
     .links{
         display:none;
@@ -580,5 +889,26 @@ input{
         background:#e0e0e0 url("img/images/pdkod portrait.png") center/cover;
         transition: background-position .2s linear;
     }
+    .swiper{
+        width: 70vw;
+    }
+
+    .body8 .body8-main{
+        flex-direction: column;
+    }
+
+    .body8 .flex1{
+        /* background-color: red; */
+        width: 100%;
+    }
     
+    .body8 a{
+        width: 80vw;
+    }
+}
+
+@media(min-width:1168px) {
+    .swiper{
+        width: 900px;
+    }
 }

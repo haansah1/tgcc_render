@@ -82,15 +82,110 @@
                 </div>
                 
                 <div  class="quote">
-                    <i class="fa-solid fa-quote-left"></i>                    <div class="script">
+                    <img src={% static "img/images/website/quote.png" %} alt="">                    
+                    <div class="script">
                         <p data-aos-duration="1000" data-aos="fade-up" class="welc-p">Ecclesiastes 5:1-2 <br>
                             Walk prudently when you go to the house of God; and draw near to hear rather than to give the sacrifice of fools, for they do not know that they do evil
                         </p>
                     </div>
                 </div>
-                <div data-aos-duration="1000" data-aos="fade-up" class="services">Services</div>
-                
-                <div class="body3">
+
+                <div class="body4">
+                    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                        <div class="swiper-wrapper">
+                        {% for image in images %}
+                          <div class="swiper-slide">
+                                <img src={{image}} alt="" >
+                          </div>
+                        {% endfor %}
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    <h1 class="p1">Jesus our king</h1>
+                    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatum voluptatem non tempore expedita! Optio, esse alias! Inventore, doloremque error!</p>
+                </div>
+
+                <div class="body5">
+                   
+                </div>
+
+                <div class="body6">
+                    <h1 class="p1">About Us.</h1>
+                    <p class="p2">Vision Statement</p>
+                    <p class="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam vel officiis consequuntur eligendi in quos provident iste numquam deserunt temporibus placeat nostrum veritatis, culpa aperiam eveniet excepturi cumque ut, quaerat maxime dolor at architecto dolore quis magni? Nihil, aspernatur voluptates.</p>
+                    <p class="p4">Mission Statement</p>
+                    <p class="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam dolorem ullam architecto in iure aspernatur quas perferendis voluptates laudantium consequatur ut officia ipsum, iusto eum similique. Ipsum asperiores nulla repudiandae recusandae perspiciatis aperiam. Deserunt molestias alias eum neque sunt illum maiores, eaque laudantium dolorum minima, sit pariatur unde ab?</p>
+                    <a href="#">See more</a>
+                </div>
+
+                <div class="body7">
+                    <div data-aos-duration="1000" data-aos="fade-up" class="services">
+                        <p>
+                            Our Services.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex1">
+                            <div class="flex1_1">
+                                {% comment %} <img src={% static 'img/images/website/Rectangle10.png' %} alt=""> {% endcomment %}
+                            </div>
+                            <div class="flex1_2">
+                                <div>
+                                    <a href="#">see more.</a>
+                                </div>
+                                <div>
+                                    {% comment %} <img src={% static 'img/images/website/Rectangle9.png' %} alt=""> {% endcomment %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex2">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, accusantium.</p>
+                    </div>
+                </div>
+
+
+                <div class="body8">
+                    <div class="body8-main">
+                        <div class="flex1">
+                            <div>
+                                <p class="p1">Sermons.</p>
+                                <p class="p2">Over 200 powerful sermons</p>
+                                <p class="p3">From God's Servant Daniel Kwame Osae Djan</p>
+                            </div>
+                            <div>
+                                <img src={% static 'img/images/website/Rectangle6.png' %} alt="">
+                            </div>
+                        </div>
+                        <div class="flex2">
+                            <p>1. Wisdom for 2025.</p>
+                            <p>2.How God answers prayer</p>
+                            <p>3. God's Ordained Power</p>
+                            <p>4. Principles of Prosperity</p>
+                            <p>5. Foundational Evil</p>
+                        </div>
+                    </div>
+                    <div class="a">
+                        <a href="#">Click for more.</a>
+                    </div>
+                </div>
+
+                <div class="body9">
+                    <p>Making <em>jesus</em> famous.</p>
+                </div>
+
+                <div class="body10">
+                    <h1 class="title">
+                        upcoming events
+                    </h1>
+                </div>
+
+
+                {% comment %} <div class="body3">
                     <div class="grid">
                         <div data-aos-duration="1000" data-aos="fade-right"class="grid1">
                            <img src="{% static 'img/images/img2.JPG' %}" alt="">
@@ -181,7 +276,7 @@
 
                         </div>
                     </div> 
-                </div>
+                </div> {% endcomment %}
             </div>
         </main>
 

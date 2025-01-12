@@ -855,13 +855,15 @@ input{
         display:none;
     }
     .welcome{
-        padding-right: 40vh;
+        padding-right: 80vh;
         justify-content: center;
 
     }
     .welcome-wrapper{
-        background:#e0e0e0 url("img/images/pdkod 123.png") center/cover;
+        /* background:#e0e0e0 url("img/images/pdkod 123.png") center/cover; */
+        background:#e0e0e0 url("img/images/website/Artboard2.png") center/cover;
         transition: background-position .2s linear;
+        
     }
     .swiper{
         width: 400px;
@@ -892,18 +894,30 @@ input{
     .swiper{
         width: 70vw;
     }
+    .body7 .flex1{
+        flex-direction: column;
+    }
 
+    .body7 .flex1 .flex1_1{
+        flex-direction: column;
+    }
+
+    
     .body8 .body8-main{
         flex-direction: column;
     }
 
     .body8 .flex1{
-        /* background-color: red; */
         width: 100%;
+        align-items:center;
     }
     
     .body8 a{
         width: 80vw;
+    }
+
+    .body8 .flex1 img{
+        width:220px;
     }
 }
 

@@ -11,7 +11,15 @@ def gallery(request):
 
 
 def index(request):
-    return render(request, "index.html")
+    images = ["static/img/images/website/asamoah.jpg", 
+              "static/img/images/website/im2.jpg",
+              "static/img/images/website/im3.JPG",
+              "static/img/images/website/im4.jpg",
+              "static/img/images/website/im5.jpg",
+              ]
+              
+    context = {"images": images}
+    return render(request, "index.html", context)
 
 def about(request):
     teams = Teams.objects.all()
